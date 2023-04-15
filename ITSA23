@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main(int argc, char** argv) 
+{
+    int N, a1, a2, a3;//a1=蘋果(15) a2=柳丁(20) a3=桃子(30) 
+    int s;//剩下金額 
+    cin>>N>>a1>>a2>>a3;
+    if (a115+a220+a330<=N){
+        s=N-(a115+a220+a330);
+        cout<<((s%50)%5)/1<<",";
+        cout<<(s%50)/5<<",";
+        cout<<s/50<<endl;
+    }else{
+        cout<<"0"<<endl;
+    }
+    return 0;
+}
